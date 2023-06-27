@@ -31,5 +31,14 @@ local plugins = {
       require("custom.configs.lspconfig")
     end
   },
+
+  -- null-ls plugin for auto formatter
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = { "go" },
+    opts = function ()
+      return require("custom.configs.null-ls")
+    end,
+  },
 }
 return plugins
