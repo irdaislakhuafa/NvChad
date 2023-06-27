@@ -29,13 +29,13 @@ M.dap = {
 }
 
 -- mapping for nvim-dap-go
-M.dap = {
+M.dap_go = {
   plugin = true,
   n = {
-    ["<leader>dgt"] = { function ()
+    ["<leader>gdtt"] = { function ()
       require("dap-go").debug_test();
     end, "Go debug test" },
-    ["<leader>dgtl"] = { function ()
+    ["<leader>gdtl"] = { function ()
       require("dap-go").debug_last();
     end, "Go debug last test" },
   }

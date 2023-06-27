@@ -44,6 +44,9 @@ local plugins = {
   -- nvim-dap (Debug Adapter Protocol)
   {
     "mfussenegger/nvim-dap",
+    init = function ()
+      require("core.utils").load_mappings("dap")
+    end
   },
   -- debug adapter protocol for Go
   {
@@ -51,8 +54,8 @@ local plugins = {
     ft = { "go" },
     dependencies = { "mfussenegger/nvim-dap" },
     config = function (_, opts)
-      local dap_go = require("dap-go")
-      return dap_go.setup(opts)
+      require("dap-go").setup(opts)
+      require("core.utils").load_mappings("dap_go")
     end
   },
 }
