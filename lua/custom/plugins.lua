@@ -66,6 +66,7 @@ local plugins = {
   -- GraphQL for vim
   {
     "jparise/vim-graphql",
+    ft = { "graphql", "gql", "gqls", "graphqls" },
   },
 }
 return plugins
