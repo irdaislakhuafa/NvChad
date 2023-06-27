@@ -68,5 +68,10 @@ local plugins = {
     "jparise/vim-graphql",
     ft = { "graphql", "gql", "gqls", "graphqls" },
   },
+
+  -- multi cursol in neovim
+  {
+    "mg979/vim-visual-multi",
+  },
 }
 return plugins

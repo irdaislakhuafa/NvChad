@@ -6,12 +6,19 @@
 
 local M = {}
 
+M.disabled = {
+  n = {
+    ["<C-n>"] = "",
+  }
+}
+
 M.general = {
   i = {
     ["<C-s>"] = { "<ESC>:w <CR>", "Write/Save file" },
   },
   n = {
     ["<A-t>"] = { ":Telescope <CR>", "Telescope toggle" },
+    ["<C-l>"] = { ":NvimTreeToggle <CR>", "Telescope toggle", { silent = true } },
   }
 }
 
