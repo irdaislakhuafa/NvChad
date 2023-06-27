@@ -12,11 +12,5 @@ local plugins = {
   --     vscode.load()
   --   end
   -- }
-  {
-    "junegunn/fzf.vim",
-    config = function ()
-      require("fzf").setup()
-    end
-  },
 }
 return plugins
