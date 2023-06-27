@@ -40,5 +40,20 @@ local plugins = {
       return require("custom.configs.null-ls")
     end,
   },
+
+  -- nvim-dap (Debug Adapter Protocol)
+  {
+    "mfussenegger/nvim-dap",
+  },
+  -- debug adapter protocol for Go
+  {
+    "leoluz/nvim-dap-go",
+    ft = { "go" },
+    dependencies = { "mfussenegger/nvim-dap" },
+    config = function (_, opts)
+      local dap_go = require("dap_go")
+      dap_go.setup(opts)
+    end
+  },
 }
 return plugins
