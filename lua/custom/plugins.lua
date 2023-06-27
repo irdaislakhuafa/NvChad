@@ -58,5 +58,22 @@ local plugins = {
       require("core.utils").load_mappings("dap_go")
     end
   },
+
+  -- gopher.nvim Minimalistic plugin for Go development in Neovim written in Lua
+  {
+    "olexsmir/gopher.nvim",
+    ft = { "go" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function ()
+      local opts = require("custom.configs.gopher");
+      require("gopher").setup(opts);
+    end,
+    build = function ()
+      vim.cmd([[silent! GoInstallDeps]])
+    end
+  },
 }
 return plugins
