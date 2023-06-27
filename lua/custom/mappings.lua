@@ -41,4 +41,13 @@ M.dap_go = {
   }
 }
 
+-- mapping for gopher.nvim
+M.gopher = {
+  plugin = true,
+  n = {
+    ["<leader>gta"] = { ":GoTagAdd ", "Go add struct tags" },
+    ["<leader>gtr"] = { ":GoTagRm ", "Go remove struct tags" },
+  },
+}
+
 return M

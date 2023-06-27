@@ -70,6 +70,7 @@ local plugins = {
     config = function ()
       local opts = require("custom.configs.gopher");
       require("gopher").setup(opts);
+      require("core.utils").load_mappings("gopher");
     end,
     build = function ()
       vim.cmd([[silent! GoInstallDeps]])
