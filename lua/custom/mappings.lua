@@ -17,5 +17,7 @@ M.dap_go = require("custom.mappings.dap_go")
 M.gopher = require("custom.mappings.gopher")
 -- align text with Tabular.vim
 M.tabular = require("custom.mappings.tabular")
+-- move line
+M.vim_move = require("custom.mappings.vim_move")
 
 return M

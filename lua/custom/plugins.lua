@@ -103,6 +103,9 @@ local plugins = {
   {
     "matze/vim-move",
     lazy = false,
+    config = function ()
+      require("core.utils").load_mappings("vim_move")
+    end
   },
 }
 return plugins
