@@ -98,5 +98,11 @@ local plugins = {
       require("core.utils").load_mappings("tabular")
     end
   },
+
+  -- move line like vs code
+  {
+    "matze/vim-move",
+    lazy = false,
+  },
 }
 return plugins
