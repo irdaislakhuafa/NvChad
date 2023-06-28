@@ -89,5 +89,11 @@ local plugins = {
       vim.api.nvim_command(':BlamerShow')
     end
   },
+
+  -- Aligning text with Tabular.vim
+  {
+    "godlygeek/tabular",
+    ft = { "*" },
+  },
 }
 return plugins
