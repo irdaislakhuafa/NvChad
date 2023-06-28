@@ -80,5 +80,14 @@ local plugins = {
     "tpope/vim-fugitive",
     lazy = false,
   },
+
+  -- git blamer
+  {
+    "APZelos/blamer.nvim",
+    lazy = false,
+    config = function ()
+      vim.api.nvim_command(':BlamerShow')
+    end
+  },
 }
 return plugins
