@@ -74,5 +74,11 @@ local plugins = {
     "mg979/vim-visual-multi",
     lazy = false,
   },
+
+  -- fugitive.vim: A Git wrapper so awesome, it should be illegal
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+  },
 }
 return plugins
