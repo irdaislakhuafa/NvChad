@@ -15,5 +15,7 @@ M.dap = require("custom.mappings.dap")
 M.dap_go = require("custom.mappings.dap_go")
 -- mapping for gopher.nvim
 M.gopher = require("custom.mappings.gopher")
+-- align text with Tabular.vim
+M.tabular = require("custom.mappings.tabular")
 
 return M

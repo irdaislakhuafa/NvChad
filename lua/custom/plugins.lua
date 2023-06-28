@@ -94,6 +94,9 @@ local plugins = {
   {
     "godlygeek/tabular",
     ft = { "*" },
+    config = function ()
+      require("core.utils").load_mappings("tabular")
+    end
   },
 }
 return plugins
