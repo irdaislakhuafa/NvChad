@@ -101,8 +101,9 @@ local plugins = {
 
   -- move line like vs code
   {
-    "matze/vim-move",
+    "irdaislakhuafa/vim-move",
     lazy = false,
+    branch = "keymaps/vscode",
     config = function ()
       require("core.utils").load_mappings("vim_move")
     end
