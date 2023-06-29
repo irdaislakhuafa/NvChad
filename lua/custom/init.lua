@@ -1,5 +1,5 @@
 vim.cmd([[
-  set buftype=""
+  autocmd VimEnter * set buftype=""
 
   " disable swapfile "
   set noswapfile
