@@ -107,5 +107,14 @@ local plugins = {
       require("core.utils").load_mappings("vim_move")
     end
   },
+
+  -- override nvim-tree default config
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function ()
+      local opts = require("custom.configs.nvimtree")
+      require("nvim-tree").setup(opts)
+    end
+  },
 }
 return plugins
