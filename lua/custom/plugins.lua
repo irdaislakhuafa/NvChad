@@ -113,8 +113,10 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     config = function ()
+      dofile(vim.g.base46_cache .. "nvimtree")
       local opts = require("custom.configs.nvimtree")
       require("nvim-tree").setup(opts)
+      vim.g.nvimtree_side = opts.view.side
     end
   },
 }
