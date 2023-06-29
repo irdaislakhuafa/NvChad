@@ -1,4 +1,4 @@
 local ui = {
-  theme = "radium",
+  theme = "nord",
 }
 return ui
