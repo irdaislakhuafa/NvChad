@@ -48,7 +48,7 @@ local ui = {
     style = "bordered",
   },
   tabufline = {
-    show_numbers = true,
+    show_numbers = false,
   },
 }
 
