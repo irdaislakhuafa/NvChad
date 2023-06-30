@@ -9,8 +9,10 @@ local keymaps = {
     ["<C-d>"] = { ":t. <CR>", "Duplicate single line", { silent = true } },
     ["<leader>cc"] = { ":Telescope commands <CR>", "VIM commands with Telescope", { silent = true } },
     ["<C-x>"] = { "dd", "Cut current line", { silent = true } },
-    ["<leader>clm"] = { ":set cursorcolumn <CR>", "Enable cursor cursor column", { silent = true } },
-    ["<leader>nclm"] = { ":set nocursorcolumn <CR>", "Disable cursor cursor column", { silent = true } },
+    ["<leader>eclm"] = { ":set cursorcolumn <CR>", "Enabl cursor column", { silent = true } },
+    ["<leader>dclm"] = { ":set nocursorcolumn <CR>", "Disable cursor column", { silent = true } },
+    ["<leader>ewrp"] = { ":set wrap <CR>", "Enable wrap text", { silent = true } },
+    ["<leader>dwrp"] = { ":set nowrap <CR>", "Disable wrap text", { silent = true } },
   },
   v = {
     -- TODO: handle duplicate multiple line, currently not working
