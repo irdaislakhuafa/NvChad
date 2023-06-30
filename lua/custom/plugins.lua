@@ -124,8 +124,10 @@ local plugins = {
   {
     "lukas-reineke/indent-blankline.nvim",
     lazy = false,
-    config = function ()
-      local opts = require("custom.configs.indent-blankline")
+    opts = function ()
+      return require("custom.configs.indent-blankline")
+    end,
+    config = function (_, opts)
       require("indent_blankline").setup(opts)
     end
   },

@@ -3,4 +3,10 @@ vim.cmd([[
 
   " disable swapfile "
   set noswapfile
+
+  " set cursor line "
+  set cursorline
+  
+  " set cursorcolumn "
+  set cursorcolumn
 ]])
