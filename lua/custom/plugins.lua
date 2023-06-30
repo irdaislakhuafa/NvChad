@@ -119,5 +119,15 @@ local plugins = {
       vim.g.nvimtree_side = opts.view.side
     end
   },
+
+  -- indentations guides
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    lazy = false,
+    config = function ()
+      local opts = require("custom.configs.indent-blankline")
+      require("indent_blankline").setup(opts)
+    end
+  },
 }
 return plugins
