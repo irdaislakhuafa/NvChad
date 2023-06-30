@@ -16,7 +16,7 @@ local ui = {
   },
   hl_override = {
     IndentBlanklineContextChar = {
-      fg = "#abb2bf",
+      fg = "Label",
       bg = "black"
     },
     CursorLine = {

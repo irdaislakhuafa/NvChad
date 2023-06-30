@@ -15,6 +15,7 @@ local overrided_config = {
   show_end_of_line = true,
   show_current_context = true,
   show_current_context_start = true,
+  context_highlight_list = { "Label" },
   show_first_indent_level = true,
   -- space_char_blankline = " ",
   -- char_highlight_list = {
