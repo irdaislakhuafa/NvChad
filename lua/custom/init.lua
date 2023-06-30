@@ -11,6 +11,6 @@ vim.cmd([[
   set cursorcolumn
 
   " enable code folding with nvim-treesitter "
-  set foldmethod=expr
-  set foldexpr=nvim_treesitter#foldexpr()
+  " set foldmethod=expr
+  " set foldexpr=nvim_treesitter#foldexpr()
 ]])

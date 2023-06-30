@@ -25,6 +25,9 @@ local ui = {
     CursorColumn = {
       bg = "one_bg",
     },
+    Comment = {
+      fg = "white",
+    },
   },
   statusline = {
     separator_style = "arrow",
