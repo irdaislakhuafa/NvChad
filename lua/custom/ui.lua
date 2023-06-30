@@ -1,4 +1,16 @@
 local ui = {
   theme = "nord",
+  changed_themes = {
+    -- nord = {
+    --   base_16 = {
+    --     base00 = "#2c3e50",
+    --   },
+    --   base_30 = {
+    --     black = "#2c3e50",
+    --     black2 = "#283d5e",
+    --     darker_black = "#2c3e55", -- nvim-tree background
+    --   },
+    -- },
+  },
 }
 return ui

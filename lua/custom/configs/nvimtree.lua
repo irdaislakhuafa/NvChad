@@ -7,7 +7,7 @@ nvimtree.git = {
 
 nvimtree.renderer.icons.show.git = true
 nvimtree.renderer.highlight_git = false
-nvimtree.renderer.root_folder_label = true
+nvimtree.renderer.root_folder_label = false
 nvimtree.renderer.indent_markers.enable = true
 
 return nvimtree
