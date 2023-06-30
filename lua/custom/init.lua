@@ -12,4 +12,4 @@ opt.softtabstop = 4
 opt.expandtab = true
 opt.shiftwidth = 4
 
-opt.noswapfile = true
+opt.swapfile = false
