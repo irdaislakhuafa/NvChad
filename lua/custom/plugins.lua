@@ -129,5 +129,19 @@ local plugins = {
       require("indent_blankline").setup(opts)
     end
   },
+
+  -- nvim rainbow brackets, currently disabled
+  {
+    "HiPhish/nvim-ts-rainbow2",
+    lazy = true,
+    enabled = false,
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function ()
+      local opts = require("custom.configs.nvim-treesitter")
+      require("nvim-treesitter.configs").setup(opts)
+    end
+  },
 }
 return plugins
