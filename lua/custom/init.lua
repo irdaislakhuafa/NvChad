@@ -9,7 +9,7 @@ opt.cursorcolumn = true
 
 opt.tabstop = 4
 opt.softtabstop = 4
-opt.expandtab = true
+opt.expandtab = false
 opt.shiftwidth = 4
 
 opt.swapfile = false
