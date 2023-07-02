@@ -145,9 +145,10 @@ local plugins = {
 		hi TSRainbowRed    guifg='#00aaff'
 		hi TSRainbowYellow guifg='#ffff00'
 		hi TSRainbowBlue   guifg='#00ff1e'
-		hi TSRainbowOrange guifg='#ff0000'
+		hi TSRainbowOrange guifg='#55aaff'
 		hi TSRainbowViolet guifg='#ff00ff'
 		hi TSRainbowCyan   guifg='#55ffff'
+		hi TSRainbowGreen  guifg='#00ff7f'
 	  ]])
       local opts = require("custom.configs.nvim-treesitter")
       require("nvim-treesitter.configs").setup(opts)

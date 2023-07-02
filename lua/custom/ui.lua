@@ -1,3 +1,4 @@
+-- override annotation highlight
 local ui = {
   theme = "nord",
   theme_toggle = { "nord", "github_light" },
@@ -5,6 +6,7 @@ local ui = {
     nord = {
       base_16 = {
         base00 = "#002b36",
+        base0B = "#00aaff",
       },
       base_30 = {
         black = "#002b36",
