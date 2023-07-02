@@ -14,16 +14,16 @@ local ui = {
       },
     },
   },
-  hl_override = {
-    IndentBlanklineContextChar = { fg = "Label", bg = "black" },
+  hl_override                  = {
+    IndentBlanklineContextChar = { fg = "Label", bg  = "black" },
     CursorLine                 = { bg = "one_bg" },
     CursorColumn               = { bg = "one_bg" },
     Comment                    = { fg = "white" },
-    Visual                     = { fg = "black", bg = "blue" },
-    VM_Mono                    = { fg = "black", bg = "blue" },
-    VM_Extend                  = { fg = "black", bg = "blue" },
-    VM_Cursor                  = { fg = "black", bg = "blue" },
-    VM_Insert                  = { fg = "black", bg = "blue" },
+    Visual                     = { fg = "black", bg  = "blue" },
+    VM_Mono                    = { fg = "black", bg  = "blue" },
+    VM_Extend                  = { fg = "black", bg  = "blue" },
+    VM_Cursor                  = { fg = "black", bg  = "blue" },
+    VM_Insert                  = { fg = "black", bg  = "blue" },
   },
   statusline = {
     separator_style = "arrow",

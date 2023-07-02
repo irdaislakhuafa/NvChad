@@ -135,15 +135,24 @@ local plugins = {
   -- nvim rainbow brackets, currently disabled
   {
     "HiPhish/nvim-ts-rainbow2",
-    lazy = true,
-    enabled = false,
+    lazy = false,
+    enabled = true,
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function ()
+	  vim.cmd([[
+		hi TSRainbowRed    guifg='#00aaff'
+		hi TSRainbowYellow guifg='#ffff00'
+		hi TSRainbowBlue   guifg='#00ff1e'
+		hi TSRainbowOrange guifg='#ff0000'
+		hi TSRainbowViolet guifg='#ff00ff'
+		hi TSRainbowCyan   guifg='#55ffff'
+	  ]])
       local opts = require("custom.configs.nvim-treesitter")
       require("nvim-treesitter.configs").setup(opts)
     end
   },
 }
+
 return plugins
