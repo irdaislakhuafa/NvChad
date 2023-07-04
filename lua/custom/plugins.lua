@@ -81,15 +81,6 @@ local plugins = {
     lazy = false,
   },
 
-  -- git blamer
-  {
-    "APZelos/blamer.nvim",
-    lazy = false,
-    config = function ()
-      vim.api.nvim_command(':BlamerShow')
-    end
-  },
-
   -- Aligning text with Tabular.vim
   {
     "godlygeek/tabular",
