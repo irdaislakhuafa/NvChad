@@ -72,7 +72,11 @@ local plugins = {
   -- multi cursol in neovim
   {
     "mg979/vim-visual-multi",
+    branch = "master",
     lazy = false,
+    config = function ()
+      vim.cmd([[VMTheme codedark]])
+    end
   },
 
   -- fugitive.vim: A Git wrapper so awesome, it should be illegal
@@ -132,18 +136,27 @@ local plugins = {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function ()
-	  vim.cmd([[
-		hi TSRainbowRed    guifg='#00aaff'
-		hi TSRainbowYellow guifg='#ffff00'
-		hi TSRainbowBlue   guifg='#00ff1e'
-		hi TSRainbowOrange guifg='#55aaff'
-		hi TSRainbowViolet guifg='#ff00ff'
-		hi TSRainbowCyan   guifg='#55ffff'
-		hi TSRainbowGreen  guifg='#00ff7f'
-	  ]])
+      vim.cmd([[
+        hi TSRainbowRed    guifg='#00aaff'
+        hi TSRainbowYellow guifg='#ffff00'
+        hi TSRainbowBlue   guifg='#00ff1e'
+        hi TSRainbowOrange guifg='#55aaff'
+        hi TSRainbowViolet guifg='#ff00ff'
+        hi TSRainbowCyan   guifg='#55ffff'
+        hi TSRainbowGreen  guifg='#00ff7f'
+      ]])
       local opts = require("custom.configs.nvim-treesitter")
       require("nvim-treesitter.configs").setup(opts)
     end
+  },
+
+  -- lazy git to use git with easy way in neovim
+  {
+    "kdheepak/lazygit.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
   },
 }
 
