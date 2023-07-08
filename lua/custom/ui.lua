@@ -6,13 +6,32 @@ local ui = {
     nord = {
       base_16 = {
         base00 = "#002b36",
-        base0B = "#00aaff",
+        -- base01 = "",
+        -- base02 = "",
+        -- base03 = "",
+        -- base04 = "",
+        -- base05 = "",
+        -- base06 = "",
+        -- base07 = "",
+        base08 = "#3388FF",
+        -- base09 = "",
+        base0A = "#0066FF",
+
+        -- string
+        base0B = "#77CCFF",
+        base0C = "#0055ff",
+        base0D = "#00aaff",
+
+        -- function
+        base0E = "#00aaff",
+        -- base0F = "red",
       },
       base_30 = {
         black = "#002b36",
         black2 = "#06313c",
         darker_black = "#002530", -- nvim-tree background
         statusline_bg = "#042f3a",
+        nord_blue = "#0055ff",
       },
     },
   },
@@ -21,7 +40,7 @@ local ui = {
     CursorLine                 = { bg = "one_bg" },
     CursorColumn               = { bg = "one_bg" },
     Comment                    = { fg = "white" },
-    Visual                     = { fg = "black", bg  = "lightblue" },
+    Visual                     = { fg = "reverse", bg  = "reverse" },
     -- VM_Mono                    = { fg = "black", bg  = "lightblue" },
     -- VM_Extend                  = { fg = "black", bg  = "lightblue" },
     -- VM_Cursor                  = { fg = "black", bg  = "lightblue" },
