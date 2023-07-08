@@ -18,6 +18,7 @@ lspc.gopls.setup({
     gopls = {
       completeUnimported = true,
       usePlaceholders = true,
+      staticcheck = true,
       analyses = {
         unusedParam = true,
       },
