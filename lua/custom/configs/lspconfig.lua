@@ -1,4 +1,10 @@
 local lspcfg = require("plugins.configs.lspconfig")
+
+lspcfg.capabilities.textDocument.foldingRange = {
+	dynamicRegistration = false,
+	lineFoldingOnly = true,
+}
+
 local cfg = {
   on_attach = lspcfg.on_attach,
   capabilities = lspcfg.capabilities,

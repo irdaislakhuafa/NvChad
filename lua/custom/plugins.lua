@@ -136,15 +136,6 @@ local plugins = {
       "nvim-treesitter/nvim-treesitter",
     },
     config = function ()
-      vim.cmd([[
-        hi TSRainbowRed    guifg='#00aaff'
-        hi TSRainbowYellow guifg='#ffff00'
-        hi TSRainbowBlue   guifg='#00ff1e'
-        hi TSRainbowOrange guifg='#55aaff'
-        hi TSRainbowViolet guifg='#ff00ff'
-        hi TSRainbowCyan   guifg='#55ffff'
-        hi TSRainbowGreen  guifg='#00ff7f'
-      ]])
       local opts = require("custom.configs.nvim-treesitter")
       require("nvim-treesitter.configs").setup(opts)
     end
@@ -158,6 +149,21 @@ local plugins = {
       "nvim-lua/plenary.nvim",
     },
   },
+
+  -- ufo code folding
+  {
+    "kevinhwang91/nvim-ufo",
+    lazy = false,
+    dependencies = {
+      "kevinhwang91/promise-async",
+      "nvim-treesitter/nvim-treesitter",
+      "neovim/nvim-lspconfig",
+    },
+    config = function ()
+      local opts = require("custom.configs.nvim-ufo")
+      require("ufo").setup(opts)
+    end
+  }
 }
 
 return plugins
