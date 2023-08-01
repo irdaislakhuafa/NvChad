@@ -1,7 +1,7 @@
 -- override annotation highlight
 local ui = {
-  theme = "nord",
-  theme_toggle = { "nord", "github_light" },
+  theme = "oxocarbon",
+  theme_toggle = { "oxocarbon", "github_light" },
   changed_themes = {
     nord = {
       base_16 = {
@@ -33,6 +33,16 @@ local ui = {
         statusline_bg = "#042f3a",
         nord_blue = "#0055ff",
       },
+    },
+  },
+  oxocarbon = {
+    base_16 = {
+    },
+    base_30 = {
+      black = "#002b36",
+      black2 = "#06313c",
+      darker_black = "#002530", -- nvim-tree background
+      statusline_bg = "#042f3a",
     },
   },
   hl_override                  = {

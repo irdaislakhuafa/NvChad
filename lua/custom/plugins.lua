@@ -127,7 +127,7 @@ local plugins = {
     end
   },
 
-  -- nvim rainbow brackets, currently disabled
+  -- nvim rainbow brackets
   {
     "HiPhish/nvim-ts-rainbow2",
     lazy = false,
@@ -163,7 +163,14 @@ local plugins = {
       local opts = require("custom.configs.nvim-ufo")
       require("ufo").setup(opts)
     end
-  }
+  },
+
+  -- nightlify color schema
+  {
+    "bluz71/vim-nightfly-colors",
+    lazy = false,
+    priority = 1000,
+  },
 }
 
 return plugins
