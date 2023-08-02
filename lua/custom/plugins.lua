@@ -5,6 +5,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "jdtls"
       },
     },
   },
@@ -170,6 +171,15 @@ local plugins = {
     "bluz71/vim-nightfly-colors",
     lazy = false,
     priority = 1000,
+  },
+
+  -- JDTLS for Java Development
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = { "java" },
+    config = function ()
+      require("custom.configs.nvim-jdtls")
+    end
   },
 }
 
